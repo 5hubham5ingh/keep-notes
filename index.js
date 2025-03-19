@@ -152,6 +152,10 @@ function createNote(
 
 // Handle adding new collection
 addNewCollectionButton.addEventListener("click", () => {
+  addNewCollectionButton.innerText =
+    addNewCollectionModal.style.visibility === "visible"
+      ? "Add collection"
+      : "Cacel";
   addNewCollectionModal.style.visibility =
     addNewCollectionModal.style.visibility === "visible" ? "hidden" : "visible";
 });
